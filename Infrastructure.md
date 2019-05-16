@@ -17,7 +17,7 @@
 13. From a new browser window open http://checkip.amazonaws.com/
 14. Copy the IP address.
 15. For Stack Parameters **ClientIP** enter the ipaddress followed by /32
-  1. e.g. my ip address is 49.180.175.238 then it would 49.180.175.238/32
+  1. e.g. my ip address is 49.180.175.238 then it would be 49.180.175.238/32
 16. For parameter **myKeyPair** select the keypair from the dropdown as created in initial steps.
 17. Click **Next**.
 18. Click **Next** (present at the end of the page) for the page **Configure stack options**

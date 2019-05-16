@@ -8,6 +8,7 @@ Once the Cloudformation Stack completes successfully would launch following comp
   2. EC2 SQL Server Windows 2016 SQL Server 2016 SP2 ENT edition
   3. Aurora Postgres Cluster with single node.
   4. EC2 Client linux (amazon linux 2) which would be used to connect to source and targets database instances.
+  
 From Cloudformation Stack output you will get following information:
 
 1. SSH Command for EC2 client from your laptop

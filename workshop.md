@@ -6,12 +6,11 @@
 
 
 # Replication Instance
-1. Open **AWS Console** by clicking on link https://console.aws.amazon.com/console/home?region=us-east-1
-2. Under Services open
-Open AWS Console in US-East-1 region and then open service Database Migration Service
-Open Replication Instances
-Create a replication Instance
-Inputs:
-Name of instance and short description
-Select VPC (myVPC)
-Under advanced security and network configuration select “VPC Security Group” name having EC2ClientSG
+1. Open **AWS DMS Console** by clicking on link https://console.aws.amazon.com/dms/v2/home?region=us-east-1
+2. Open Replication Instances
+3. Create a replication Instance
+  1. Inputs:
+    1. Name of instance and short description
+    2. Select VPC (having name **myVPC**)
+    3. Under advanced security and network configuration select “VPC Security Group” name having **EC2ClientSG**
+    4. Lastly click on **Create**.

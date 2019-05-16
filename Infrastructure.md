@@ -1,3 +1,4 @@
+
 # Setup Infrastructure
 
 1. Open **AWS Console** by clicking on link https://console.aws.amazon.com/console/home?region=us-east-1
@@ -26,4 +27,4 @@
 21. Lastly click on **Create Stack**.
 
 # Stack Output
- 
+![Scan Me](https://github.com/rautsubh/DbSession/blob/master/stackOutput.png)

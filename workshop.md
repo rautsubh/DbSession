@@ -106,9 +106,9 @@ select * from mytable;
 9. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.
 10. Under **Table mappings** migrate table **MYTABLE** from **MYUSER** schema.
 11. Add a **transformation rule**
-  1. to rename schema from MYUSER to public.
-  2. convert the table MYTABLE to lowercase.
-  3. convert all column names (%) of table MYTABLE to lowercase
+    1. to rename schema from MYUSER to public.
+    2. convert the table MYTABLE to lowercase.
+    3. convert all column names (%) of table MYTABLE to lowercase
 12. Lastly **Create task**
 
 Monitor the task for successful completion. If not troubleshoot the same using cloudwatch logs.

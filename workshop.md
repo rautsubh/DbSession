@@ -84,7 +84,7 @@ Based on your interest you can work on a *Oracle to Aurora Postgres* Or a *SQL S
 7. **TargetDatabaseEndpoint** Select Aurora Postgres endpoint *aurorapgtarget*.
 8. Set the Migration type to *Migrate existing data*
 9. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.
-10. Under **Table mappings** migrate table **mytable** from **dbo** schema.
+10. Under **Table mappings** select table **mytable** from **dbo** schema.
 11. Add a **transformation rule** to rename schema from dbo to public.
 12. Lastly **Create task**
 
@@ -104,7 +104,7 @@ select * from mytable;
 7. **TargetDatabaseEndpoint** Select Aurora Postgres endpoint *aurorapgtarget*.
 8. Set the Migration type to *Migrate existing data*
 9. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.
-10. Under **Table mappings** migrate table **MYTABLE** from **MYUSER** schema.
+10. Under **Table mappings** select table **MYTABLE** from **MYUSER** schema.
 11. Add a **transformation rule**
     1. to rename schema from MYUSER to public.
     2. convert the table MYTABLE to lowercase.

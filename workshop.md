@@ -1,8 +1,8 @@
 # Agenda
 
-1. Create a *Replication Instance*
+1. Create a *Replication Instance*.
 2. Create Source and Target *Endpoints*.
-3. Create a *Replication task* to migrate data from either Oracle or SQLServer to Aurora Postgres
+3. Create a *Replication task* to migrate data from either a Oracle or SQLServer Source to Aurora Postgres target.
 
 
 # Replication Instance

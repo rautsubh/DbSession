@@ -152,6 +152,11 @@
             "CidrIp":{"Ref":"ClientIP"}
           },{
             "IpProtocol" : "tcp",
+            "FromPort" : "1433",
+            "ToPort" : "1433",
+            "CidrIp" : { "Ref" : "ClientIP"}
+          },{
+            "IpProtocol" : "tcp",
             "FromPort" : "0",
             "ToPort" : "65535",
             "CidrIp" : "172.31.0.0/16"

@@ -1,4 +1,4 @@
-# Agenda
+# Workshop Agenda
 
 1. Create a *Replication Instance*.
 2. Create Source and Target *Endpoints*.

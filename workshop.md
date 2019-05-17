@@ -72,9 +72,48 @@ Based on your interest you can work on a *Oracle to Aurora Postgres* Or a *SQL S
 14. click on **Run test**
 15. If the connection test fails troubleshoot the same.
 16. Lastly click on **Create endpoint**.
+
+
 # Task (SQLServer -> Aurora Postgres)
 1. Open **AWS DMS Console** by clicking on link https://console.aws.amazon.com/dms/v2/home?region=us-east-1
-2. Open
+2. Open **Database migration tasks**.
+3. Click on **Create task** from right top corner.
+4. **Task Identifier**: *SQL2AUPG*
+5. **Replication instance** Select the replication instance.
+6. **SourceDatabaseEndpoint** Select SQLserver endpoint *mssqlsource*.
+7. **TargetDatabaseEndpoint** Select Aurora Postgres endpoint *aurorapgtarget*.
+8. Set the Migration type to *Migrate existing data*
+9. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.
+10. Under **Table mappings** migrate table **mytable** from **dbo** schema.
+11. Add a **transformation rule** to rename schema from dbo to public.
+12. Lastly **Create task**
+
+Monitor the task for successful completion. If not troubleshoot the same using cloudwatch logs.
+
+Verify the data is migrated to target (aurora postgres)
+```
+select * from mytable;
+```
 # Task (Oracle -> Aurora Postgres)
 1. Open **AWS DMS Console** by clicking on link https://console.aws.amazon.com/dms/v2/home?region=us-east-1
-2. Open 
+2. Open **Database migration tasks**.
+3. Click on **Create task** from right top corner.
+4. **Task Identifier**: *ORA2AUPG*
+5. **Replication instance** Select the replication instance.
+6. **SourceDatabaseEndpoint** Select SQLserver endpoint *oraclesource*.
+7. **TargetDatabaseEndpoint** Select Aurora Postgres endpoint *aurorapgtarget*.
+8. Set the Migration type to *Migrate existing data*
+9. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.
+10. Under **Table mappings** migrate table **MYTABLE** from **MYUSER** schema.
+11. Add a **transformation rule**
+  1. to rename schema from MYUSER to public.
+  2. convert the table MYTABLE to lowercase.
+  3. convert all column names (%) of table MYTABLE to lowercase
+12. Lastly **Create task**
+
+Monitor the task for successful completion. If not troubleshoot the same using cloudwatch logs.
+
+Verify the data is migrated to target (aurora postgres)
+```
+select * from mytable;
+```

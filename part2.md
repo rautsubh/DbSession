@@ -17,10 +17,11 @@ INSERT INTO mytable([fname],[lname]) VALUES('Blake','Farley'),('Vladimir','Daven
 ## Oracle to Postgres **fullload and cdc** task
 1. For source RDS Oracle you can connect using EC2client ssh session and then connect using sh file oracleb.sh in the home folder.
 2. from the documentation https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Oracle.html find out the prerequisites for the RDS oracle to use as CDC source with logminer.
+>hint: Source is RDS oracle and not a EC2 or Onprem Oracle instance, thus prerequisites will vary.
 3. Make the necessary changes to source Oracle instance.
 4. Setup a new fullload and cdc task to migrate table **MYTABLE** from oracle to aurora postgres.
-5. run sample inserts on source oracle and verify data is being migrated to aurora postgres
-6. additionally you can create update/delete statements to test the cdc.
+5. Run sample inserts on source oracle and verify data is being migrated to aurora postgres
+6. Additionally you can create update/delete statements to test the cdc.
 
 ```
 --sample inserts

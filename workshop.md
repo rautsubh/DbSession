@@ -60,7 +60,7 @@ Based on your interest you can work on a *Oracle to Aurora Postgres* Or a *SQL S
 2. Open **Endpoints**.
 3. Select Endpoint type as **Target endpoint**.
 4. **Endpoint identifier**: a label for target aurora cluster say **AuroraPGTarget**
-5. **Source engine**: Select *aurora-postgres*.
+5. **Target engine**: Select *aurora-postgres*.
 6. **Server name**: from the cloudformation stack output use the Aurora Postgres **Writer** endpoint e.g. *rds-aupg106-111h2zti22ufc.cluster-cfbcererxz1y.us-east-1.rds.amazonaws.com*
 7. **Port**: *5432*
 8. **User name**: *myuser*

@@ -368,7 +368,7 @@
       "Properties": {
         "AllocatedStorage": "100",
         "CharacterSetName": "AL32UTF8",
-        "DBSnapshotIdentifier":"arn:aws:rds:us-east-1:439159886065:snapshot:dbsessionoracle-1",
+        "DBSnapshotIdentifier":"arn:aws:rds:us-east-1:439159886065:snapshot:dbsessionoracle-final",
         "DBInstanceClass": "db.m4.large",
         "PubliclyAccessible": "true",
         "StorageType": "gp2",
@@ -397,7 +397,7 @@
     "SQLServerEE13": {
       "Type": "AWS::EC2::Instance",
       "Properties":{
-        "ImageId" : "ami-0b24a1df6a73d12e1",
+        "ImageId" : "ami-09e7227810485c224",
         "InstanceType" : "m4.xlarge",
         "KeyName" :{ "Ref" :"myKeyPair" },
         "SecurityGroupIds": [{ "Ref" : "EC2ClientSG" }],

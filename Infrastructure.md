@@ -19,7 +19,8 @@
 14. Copy the IP address.
 15. For Stack Parameters **ClientIP** enter the ipaddress followed by /32
     1. if my ip address is 49.180.175.238 then it would be 49.180.175.238/32
-    2. For parameter **myKeyPair** select the keypair from the dropdown as created in initial steps.
+    2. if you want to connect from home or any other ip please set above address to 0.0.0.0/0
+    3. For parameter **myKeyPair** select the keypair from the dropdown as created in initial steps.
 17. Click **Next**.
 18. Click **Next** (present at the end of the page) for the page **Configure stack options**
 19. Under page **Review workshop01** scroll to end

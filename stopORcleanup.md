@@ -3,5 +3,5 @@
 2. Login to AWS RDS console and stop the RDS/Aurora instances
 
 
-# Cleanup after Monday's session 
+## Cleanup resources after Monday's session 
 1. Login to AWS Cloudformation console and delete the stack created.

@@ -8,7 +8,7 @@
 4. Click on **Create task** from right top corner.
 5. **Task Identifier**: *ORA2AUPGcdc*
 6. **Replication instance** Select the replication instance.
-7. **SourceDatabaseEndpoint** Select SQLserver endpoint *oraclesource*.
+7. **SourceDatabaseEndpoint** Select Oracle endpoint *oraclesource*.
 8. **TargetDatabaseEndpoint** Select Aurora Postgres endpoint *aurorapgtarget*.
 9. Set the Migration type to *Migrate existing data and replicate ongoing changes*
 10. Under **Task settings** check the logging by selecting **Enable CloudWatch logs**.

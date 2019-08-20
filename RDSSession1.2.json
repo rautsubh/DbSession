@@ -426,22 +426,22 @@
     },
     "SQLServerEndpoint": {
       "Description" : "Endpoint/DNS for SQLServer Instance",
-      "Value" : { "Fn::Join": ["", [ "SQLServerDNS: ", { "Fn::GetAtt": [ "SQLServerEE13", "PublicDnsName" ] } ] ]
+      "Value" : { "Fn::Join": ["", [ "SQLServerDNS:   ", { "Fn::GetAtt": [ "SQLServerEE13", "PublicDnsName" ] } ] ]
       }
     },
     "OracleEndpoint": {
       "Description" : "Endpoint for Oracle Instance",
-      "Value" : { "Fn::Join": ["", [ "Oracle Endpoint: ", { "Fn::GetAtt": [ "OracleDB", "Endpoint.Address" ] } ] ]
+      "Value" : { "Fn::Join": ["", [ "Oracle Endpoint:    ", { "Fn::GetAtt": [ "OracleDB", "Endpoint.Address" ] } ] ]
       }
     },
     "AuroraWriterEndpoint": {
       "Description" : "Writer Endpoint for Aurora Postgres Cluster",
-      "Value" : { "Fn::Join": ["", [ "Aurora Writer Endpoint: ", { "Fn::GetAtt": [ "AUPG106", "Endpoint.Address" ] } ] ]
+      "Value" : { "Fn::Join": ["", [ "Aurora Writer Endpoint:    ", { "Fn::GetAtt": [ "AUPG106", "Endpoint.Address" ] } ] ]
       }
     },
     "AuroraReaderEndpoint": {
       "Description" : "Reader Endpoint for Aurora Postgres Cluster",
-      "Value" : { "Fn::Join": ["", [ "Aurora Reader Endpoint: ", { "Fn::GetAtt": [ "AUPG106", "ReadEndpoint.Address" ] } ] ]
+      "Value" : { "Fn::Join": ["", [ "Aurora Reader Endpoint:     ", { "Fn::GetAtt": [ "AUPG106", "ReadEndpoint.Address" ] } ] ]
       }
     }
   }

@@ -394,6 +394,13 @@
         "Family" : "oracle-ee-12.1"
       }
     },
+    "EIP02":{
+      "Type": "AWS::EC2::EIP",
+      "Properties":{
+        "Domain":"vpc",
+        "InstanceId": {"Ref":"SQLServerEE13"}
+      }
+    },
     "SQLServerEE13": {
       "Type": "AWS::EC2::Instance",
       "Properties":{

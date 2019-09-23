@@ -31,9 +31,7 @@ UPDATE newtable set region='SOUTH' where id=2;
 16. Verify the data is getting migrating correctly.
 17. If not, troubleshoot and fix the same.
 18. Finally, do upload the task logs/source and target table (newtable) select outputs.
-19. Zip above files and name it as per your full name and day3
-Lastly upload it to
-https://tinyurl.com/yyjggswp  
+19. Compress both DMS and Aurora logs in a file with your name and Upload logs on day3logs.md
 
 
 ## 1B. SQLServer to Postgres dms task challenge
@@ -62,9 +60,7 @@ select * from finaltb;
 16. Verify the data is getting migrating correctly.
 17. If not, troubleshoot and fix the same.
 18. Finally, do upload the task logs/source and target table (finaltb) select outputs.
-19. Zip above files and name it as per your full name and day3
-Lastly upload it to
-https://tinyurl.com/yyjggswp  
+19. Compress both DMS and Aurora logs in a file with your name and Upload logs on day3logs.md
 
 # SQLServer to Postgres dms task script to run on target Aurora instance
 Script to run on target Aurora Writer PSQL connection:
@@ -209,3 +205,4 @@ WHERE query ILIKE '%autovacuu%'
 ```
 
 ### Once done, *don't forget* to upload us the output of 5 consecutive runs of Step 5 similar to earlier log uploads.
+### Compress both DMS and Aurora logs in a file with your name and Upload logs on day3logs.md
